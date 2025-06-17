@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY SNAKEE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="splash-screen">
+        <div class="game-title">MY SNAKEE</div>
+        <div class="company-name">MY SITE</div>
+    </div>
+    
+    <div class="loading-screen">
+        <div class="loading-text">Loading...</div>
+        <div class="loading-bar"></div>
+    </div>
+    
+    <div class="main-menu">
+        <h1 class="menu-title">MY SNAKEE</h1>
+        <div class="tabs">
+            <div class="tab" id="play-tab">Play</div>
+            <div class="tab" id="highscore-tab">High Score</div>
+            <div class="tab" id="about-tab">About Us</div>
+            <div class="tab" id="quit-tab">Quit</div>
+        </div>
+    </div>
+    
+    <div class="game-container">
+        <div class="game-header">
+            <div class="score-display">Score: <span id="score">0</span></div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <div class="controls">
+            <div class="control-btn" id="up-btn">↑</div>
+            <div class="control-btn" id="left-btn">←</div>
+            <div class="control-btn" id="right-btn">→</div>
+            <div class="control-btn" id="down-btn">↓</div>
+        </div>
+    </div>
+    
+    <div class="start-dialog dialog">
+        <div class="dialog-content">
+            <h2>Wanna start game?</h2>
+            <div class="dialog-options">
+                <button id="start-game">Start</button>
+                <button id="back-to-menu">Back</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="game-over-dialog dialog">
+        <div class="dialog-content">
+            <h2>Game Over!</h2>
+            <p>Score: <span id="final-score">0</span></p>
+            <p>High Score: <span id="high-score">0</span></p>
+            <div class="dialog-options">
+                <button id="play-again">Play Again</button>
+                <button id="back-to-menu2">Back</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="highscore-screen">
+        <h1>High Scores</h1>
+        <div class="scores-container" id="scores-container"></div>
+        <button class="back-btn" id="back-from-highscores">Back</button>
+    </div>
+    
+    <div class="about-screen">
+        <h1>MY SITE</h1>
+        <div class="about-content">
+            <p>CEO: Muhammad Saifullah Mahin</p>
+            <p>Email: saifullahmahin0001@gmail.com</p>
+        </div>
+        <button class="back-btn" id="back-from-about">Back</button>
+    </div>
+    
+    <div class="quit-dialog dialog">
+        <div class="dialog-content">
+            <h2>Wanna quit game?</h2>
+            <div class="dialog-options">
+                <button id="confirm-quit">Yes</button>
+                <button id="cancel-quit">No</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+          </html>
